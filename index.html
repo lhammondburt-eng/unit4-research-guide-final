@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRT 110 Unit 4: Research Essay Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { border-bottom: 2px solid #2563eb; color: #2563eb; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-gray-50 p-6 font-sans text-gray-800">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
+        <!-- Header -->
+        <div class="bg-blue-600 text-white p-6">
+            <h1 class="text-2xl font-bold">WRT 110 Unit 4: The Research Essay</h1>
+            <p class="mt-2 text-blue-100">Refining Your Topic, Scope, and Arguments</p>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="flex border-b overflow-x-auto bg-gray-50">
+            <button class="tab-btn active px-4 py-3 text-gray-600 whitespace-nowrap hover:bg-gray-100" onclick="openTab(event, 'overview')">Overview & Stakes</button>
+            <button class="tab-btn px-4 py-3 text-gray-600 whitespace-nowrap hover:bg-gray-100" onclick="openTab(event, 'thesis')">Thesis Tester</button>
+            <button class="tab-btn px-4 py-3 text-gray-600 whitespace-nowrap hover:bg-gray-100" onclick="openTab(event, 'topics')">Topic Scoping</button>
+            <button class="tab-btn px-4 py-3 text-gray-600 whitespace-nowrap hover:bg-gray-100" onclick="openTab(event, 'meal')">MEAL Plan</button>
+            <button class="tab-btn px-4 py-3 text-gray-600 whitespace-nowrap hover:bg-gray-100" onclick="openTab(event, 'drafting')">Drafting Space</button>
+        </div>
+
+        <!-- Content Area -->
+        <div class="p-6">
+            
+            <!-- Tab 1: Overview -->
+            <div id="overview" class="tab-content active">
+                <h2 class="text-xl font-bold mb-4 text-blue-800">Assignment Parameters</h2>
+                <ul class="list-disc pl-5 space-y-2 mb-6">
+                    <li><strong>Length:</strong> 5-6 pages (approximately 1250-1500 words), double-spaced.</li>
+                    <li><strong>Sources:</strong> Minimum of five (5) peer-reviewed academic sources (e.g., academic journal articles or scholarly monographs).</li>
+                    <li><strong>Format:</strong> Consistent use of MLA 9th Edition or APA 7th Edition.</li>
+                    <li><strong>Goal:</strong> Defense of a specific, non-obvious position on a complex debate (not just summary or descriptive writing).</li>
+                </ul>
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h3 class="font-bold text-blue-800 mb-2">The Stakes & Audience</h3>
+                    <p>Your thesis must establish why this debate matters to the broader academic community or public discourse. You are writing for an informed, skeptical academic reader who expects claims to be substantiated by verifiable scholarly evidence and logical reasoning.</p>
+                </div>
+            </div>
+
+            <!-- Tab 2: Thesis Tester -->
+            <div id="thesis" class="tab-content">
+                <h2 class="text-xl font-bold mb-4 text-blue-800">Is Your Topic Arguable?</h2>
+                <p class="mb-4">Your essay must be built around a focused, assertive, and directional thesis statement.</p>
+                
+                <div class="space-y-4">
+                    <details class="bg-gray-50 border border-gray-200 rounded-lg p-4 cursor-pointer">
+                        <summary class="font-semibold text-gray-700">1. Is it just a fact?</summary>
+                        <p class="mt-2 text-sm text-gray-600">If everyone universally agrees on your premise, it is not a debate. Your stance must be on an issue open to genuine intellectual debate.</p>
+                    </details>
+                    <details class="bg-gray-50 border border-gray-200 rounded-lg p-4 cursor-pointer">
+                        <summary class="font-semibold text-gray-700">2. Does it rely on personal opinion?</summary>
+                        <p class="mt-2 text-sm text-gray-600">Arguments must be built upon shared, verifiable academic knowledge rather than personal anecdotes or unsupported emotional claims.</p>
+                    </details>
+                    <details class="bg-gray-50 border border-gray-200 rounded-lg p-4 cursor-pointer">
+                        <summary class="font-semibold text-gray-700">3. Does it define the stakes?</summary>
+                        <p class="mt-2 text-sm text-gray-600">Why does this matter? Your thesis must establish the consequences or importance of this debate to the public or academic sphere.</p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Tab 3: Topic Scoping -->
+            <div id="topics" class="tab-content">
+                <h2 class="text-xl font-bold mb-4 text-blue-800">From Broad Tension to Narrow Scope</h2>
+                <p class="mb-4">Topics must be narrow, researchable via peer-reviewed literature, and open to multi-sided debate. Below are examples of how to narrow a broad tension.</p>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="p-3 border-b font-semibold text-sm">Topic Area</th>
+                                <th class="p-3 border-b font-semibold text-sm">The Tension / Debate</th>
+                                <th class="p-3 border-b font-semibold text-sm">Sample Narrow Thesis Scope</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <tr>
+                                <td class="p-3 border-b font-medium">Environmental Policy</td>
+                                <td class="p-3 border-b">Economic growth vs. Ecological preservation.</td>
+                                <td class="p-3 border-b"><strong>Debt-for-Nature Swaps:</strong> Canceling sovereign debt in developing nations for rainforest protection.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border-b font-medium">Artificial Intelligence</td>
+                                <td class="p-3 border-b">Tech efficiency vs. Human labor value.</td>
+                                <td class="p-3 border-b"><strong>Human-Replacement Tax:</strong> Taxing corporations that automate >30% of their workforce.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border-b font-medium">Criminal Justice</td>
+                                <td class="p-3 border-b">Retribution vs. Restorative rehabilitation.</td>
+                                <td class="p-3 border-b"><strong>Restorative Justice:</strong> Mandatory community-mediation replacing incarceration for first-time theft.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tab 4: MEAL Plan -->
+            <div id="meal" class="tab-content">
+                <h2 class="text-xl font-bold mb-4 text-blue-800">Body Paragraphs & Counterarguments</h2>
+                <p class="mb-4">Every body paragraph must perform deep analytical work using the <strong>MEAL Plan Model</strong>.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div class="bg-white border border-l-4 border-l-blue-500 shadow-sm p-4 rounded">
+                        <h4 class="font-bold text-blue-700">M - Main Idea</h4>
+                        <p class="text-sm mt-1">Presents a clear, directional claim that serves as the paragraph's core argument.</p>
+                    </div>
+                    <div class="bg-white border border-l-4 border-l-blue-500 shadow-sm p-4 rounded">
+                        <h4 class="font-bold text-blue-700">E - Evidence</h4>
+                        <p class="text-sm mt-1">Integrates specific facts, statistics, or quotes from vetted scholarly sources.</p>
+                    </div>
+                    <div class="bg-white border border-l-4 border-l-blue-500 shadow-sm p-4 rounded">
+                        <h4 class="font-bold text-blue-700">A - Analysis (50-60% of words)</h4>
+                        <p class="text-sm mt-1">Explicitly explains how the evidence proves your main idea and thesis.</p>
+                    </div>
+                    <div class="bg-white border border-l-4 border-l-blue-500 shadow-sm p-4 rounded">
+                        <h4 class="font-bold text-blue-700">L - Link</h4>
+                        <p class="text-sm mt-1">Synthesizes the argument, connects back to the thesis, and transitions logically.</p>
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg mb-2">Mandatory Counterargument</h3>
+                <p class="text-sm mb-3">You must devote space to identifying and responding to opposing viewpoints using advanced strategies:</p>
+                <ul class="list-disc pl-5 text-sm space-y-1">
+                    <li><strong>Direct Refutation:</strong> Demonstrate flawed logic, outdated data, or weak assumptions.</li>
+                    <li><strong>Acknowledgement & Qualification:</strong> Grant partial validity, but show its limited scope.</li>
+                    <li><strong>Concession & Re-Nuancing:</strong> Concede genuine force and reframe your thesis.</li>
+                </ul>
+            </div>
+
+            <!-- Tab 5: Drafting Space -->
+            <div id="drafting" class="tab-content">
+                <h2 class="text-xl font-bold mb-4 text-blue-800">Drafting & Analysis Workspace</h2>
+                
+                <label class="block text-sm font-semibold mb-1">1. Select or Describe Your Topic Focus</label>
+                <select id="topicSelect" class="w-full border p-2 rounded mb-4">
+                    <option value="">-- Choose from Syllabus or Custom --</option>
+                    <option value="Environmental Policy (Debt-for-Nature)">Environmental Policy (Debt-for-Nature)</option>
+                    <option value="AI (Human-Replacement Tax)">AI (Human-Replacement Tax)</option>
+                    <option value="Criminal Justice (Restorative Justice)">Criminal Justice (Restorative Justice)</option>
+                    <option value="Medical Ethics (Emergency Care)">Medical Ethics (Emergency Care)</option>
+                    <option value="Educational Policy (Book Challenges)">Educational Policy (Book Challenges)</option>
+                    <option value="custom">Self-Described Topic (Enter below)</option>
+                </select>
+                <input type="text" id="customTopic" placeholder="Describe your topic here..." class="w-full border p-2 rounded mb-4 hidden" />
+
+                <label class="block text-sm font-semibold mb-1">2. Working Thesis Statement</label>
+                <textarea id="draftThesis" rows="3" class="w-full border p-2 rounded mb-4" placeholder="Draft your assertive, directional thesis here..."></textarea>
+
+                <label class="block text-sm font-semibold mb-1">3. Strongest Counterargument & Your Refutation Strategy</label>
+                <textarea id="draftCounter" rows="3" class="w-full border p-2 rounded mb-4" placeholder="What is the strongest objection? How will you refute or qualify it?"></textarea>
+
+                <div class="flex gap-4">
+                    <button onclick="analyzeDraft()" class="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 font-semibold shadow-sm">Analyze My Draft (AI)</button>
+                    <button onclick="exportDraft()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 font-semibold shadow-sm">Copy to Clipboard</button>
+                </div>
+                <p id="exportMessage" class="text-green-600 text-sm mt-2 hidden font-medium">Draft and structural prompts copied! Ready to paste into Canvas or Google Docs.</p>
+
+                <div id="aiAnalysis" class="mt-6 p-4 bg-purple-50 border border-purple-200 rounded-lg hidden">
+                    <h3 class="font-bold text-purple-800 mb-2">AI Analysis & Research Strategy</h3>
+                    <div id="analysisContent" class="text-sm text-gray-700 space-y-2"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        document.getElementById('topicSelect').addEventListener('change', function() {
+            var customInput = document.getElementById('customTopic');
+            if (this.value === 'custom') {
+                customInput.classList.remove('hidden');
+            } else {
+                customInput.classList.add('hidden');
+            }
+        });
+
+        function exportDraft() {
+            const topic = document.getElementById('topicSelect').value === 'custom' ? document.getElementById('customTopic').value : document.getElementById('topicSelect').value;
+            const thesis = document.getElementById('draftThesis').value;
+            const counter = document.getElementById('draftCounter').value;
+            
+            const exportText = `
+--- WRT 110 Unit 4 Draft ---
+TOPIC: ${topic}
+WORKING THESIS: ${thesis}
+COUNTERARGUMENT: ${counter}
+
+--- Structural Prompts for Development ---
+[M] MAIN IDEA: What specific claim will your first body paragraph make? [Type here...]
+[E] EVIDENCE: What verifiable scholarly evidence will you use to support this? [Type here...]
+[A] ANALYSIS: How does this evidence prove your thesis? (Ensure this is 50-60% of your paragraph) [Type here...]
+[L] LINK: How will you transition to the next claim? [Type here...]
+
+--- Potential Research Search Terms ---
+"Scholarly articles on ${topic}"
+"Debates surrounding ${topic}"
+"Counterarguments to ${thesis.split(' ')[0] || 'your topic'}"
+            `.trim();
+
+            navigator.clipboard.writeText(exportText).then(() => {
+                const msg = document.getElementById('exportMessage');
+                msg.classList.remove('hidden');
+                setTimeout(() => msg.classList.add('hidden'), 3000);
+            });
+        }
+
+        function analyzeDraft() {
+            const topic = document.getElementById('topicSelect').value === 'custom' ? document.getElementById('customTopic').value : document.getElementById('topicSelect').value;
+            const thesis = document.getElementById('draftThesis').value;
+            const analysisBox = document.getElementById('aiAnalysis');
+            const contentBox = document.getElementById('analysisContent');
+            
+            if(!thesis) {
+                alert("Please draft a working thesis first.");
+                return;
+            }
+
+            analysisBox.classList.remove('hidden');
+            contentBox.innerHTML = "<p><i>Simulated AI Analysis running...</i></p>";
+            
+            setTimeout(() => {
+                const keywords = thesis.split(' ').filter(w => w.length > 4).join(' OR ');
+                contentBox.innerHTML = `
+                    <p><strong>Thesis Check:</strong> Does it take a definitive stance? Ensure your phrasing moves beyond descriptive summary and argues a specific viewpoint.</p>
+                    <p><strong>Stakes Check:</strong> Make sure your introduction clearly establishes *why* this debate matters to the academic community.</p>
+                    <p><strong>Suggested Academic Search Terms (Boolean Operators):</strong></p>
+                    <ul class="list-disc pl-5">
+                        <li>"${topic}" AND ("Impact" OR "Consequences")</li>
+                        <li>("${keywords}") AND "Peer Reviewed"</li>
+                        <li>"Debate" OR "Controversy" AND "${topic}"</li>
+                    </ul>
+                `;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
